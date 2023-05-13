@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>prueba-tecnica</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+    <header class="header">
+      <a href="#">Stg Markets</a>
+
+      <div class="menu">
+        <div class="menu-toggle-btn">
+          <span class="span"></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav__responsive container">
+      <div class="container__responsive">
+        <ul class="uLi">
+          <li>
+            <a href="#">Sobre nosotros <i class="bi bi-arrow-up-right"></i></a>
+          </li>
+          <li>
+            <a href="#">Trading <i class="bi bi-arrow-up-right"></i></a>
+          </li>
+          <li>
+            <a href="#">Educación <i class="bi bi-arrow-up-right"></i></a>
+          </li>
+          <li>
+            <a href="#">Plataformas <i class="bi bi-arrow-up-right"></i></a>
+          </li>
+          <li>
+            <a href="#">Contáctanos <i class="bi bi-arrow-up-right"></i></a>
+          </li>
+        </ul>
+
+        <div class="redes">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-linkedin"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-contenedor">
+      <div class="miSlider fade bg-1">
+        <div class="sli">
+          <div class="text">
+            <h1>Invierte con los mejores brókers y maximiza tus ganancias</h1>
+
+            <button>Operar ahora</button>
+          </div>
+
+          <div class="box-img">
+            <img src="img1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="miSlider fade bg-2">
+        <!-- <img src="1 (2).png" alt="">-->
+        <div class="sli">
+          <div class="text">
+            <h1>
+              Elige sabiamente tu bróker y triunfa en el mundo del trading
+            </h1>
+
+            <button>Operar ahora</button>
+          </div>
+
+          <div class="box-img">
+            <img src="img2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="miSlider fade bg-3">
+        <!---<img src="1 (3).png" alt="">-->
+        <div class="sli">
+          <div class="text">
+            <h1>
+              Descubre la emoción del trading en línea con nuestros expertos
+              brókers.
+            </h1>
+
+            <button>Operar ahora</button>
+          </div>
+
+          <div class="box-img">
+            <img src="img3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="direcciones">
+        <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+        <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+      </div>
+      <div class="barras">
+        <span class="barra active" onclick="posicionSlide(1)"></span>
+        <span class="barra" onclick="posicionSlide(2)"></span>
+        <span class="barra" onclick="posicionSlide(3)"></span>
+      </div>
+    </div>
+
+    <section class="form">
+      <h1 class="title" data-aos="fade-up" data-aos-duration="3000">
+        ¿Quieres empezar a generar con nosotros?
+      </h1>
+
+      <form data-aos="fade-up" data-aos-duration="3000">
+        <div class="col">
+          <label for="first-name">Nombre:</label>
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
+
+        <div class="col">
+          <label for="last-name">Apellido:</label>
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
+
+        <div class="col">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group col">
+          <label for="phone">Teléfono:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          />
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+
+    <!--javascript-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
